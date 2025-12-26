@@ -10,16 +10,50 @@ body {
 	margin-left: 20%;
 	margin-right: 20%;
 	border: 2px dotted black;
-	padding: 10px 10px 10px 10px;
+	padding: 10px;
 	font-family: sans-serif;
+	color: #006400; /* зелёный текст по всему body — опционально */
 }
 
-blockquote.q {
-	color: #f5eedb;
-	border-left: 4px solid #8B0000;
-	font-style: italic;
-}
-
+/* Цитата в стиле "Pudelinka" — фон золотой, текст зелёный, обводка красная */
 p.quote {
 	font-family: "Pudelinka", cursive;
+	background-color: #FFD700; /* золотой фон */
+	color: #006400; /* тёмно-зелёный текст */
+	text-shadow:
+		-1px -1px 0 #8B0000,
+		1px -1px 0 #8B0000,
+		-1px 1px 0 #8B0000,
+		1px 1px 0 #8B0000;
+	/* ИЛИ, для более чёткой обводки — 4 направления + центр: */
+	/* text-shadow: 
+		1px 0 0 #8B0000,
+		-1px 0 0 #8B0000,
+		0 1px 0 #8B0000,
+		0 -1px 0 #8B0000,
+		1px 1px 0 #8B0000,
+		-1px -1px 0 #8B0000,
+		1px -1px 0 #8B0000,
+		-1px 1px 0 #8B0000; */
+	padding: 8px 12px;
+	border-radius: 6px;
+	display: inline-block;
+	margin: 10px 0;
+}
+
+/* Также примените стили к blockquote.q — там у вас цитата Лао Цзы */
+blockquote.q {
+	color: #006400; /* зелёный текст */
+	background-color: #FFD700; /* золотой фон */
+	border-left: 4px solid #8B0000;
+	font-style: italic;
+	font-family: "Pudelinka", cursive;
+	padding: 8px 16px;
+	border-radius: 0 6px 6px 0;
+	margin: 16px 0;
+	text-shadow:
+		1px 0 0 #8B0000,
+		-1px 0 0 #8B0000,
+		0 1px 0 #8B0000,
+		0 -1px 0 #8B0000;
 }
