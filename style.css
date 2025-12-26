@@ -1,48 +1,59 @@
 @font-face {
 	font-family: "Pudelinka";
-	src: url("Fonts/pudelinka.ttf") format("truetype");
+	src: url("Fonts/pudelinka.ttf") format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 body {
-	background-color: #2E7D32; /* ← фон теперь тёмно-зелёный, как хвоя ёлки */
-	color: #fbe9d6; /* ← светлый кремовый текст — отличная контрастность! */
+	background-color: #f5eedb;
 	margin-left: 20%;
 	margin-right: 20%;
-	border: 2px dotted #C1272D; /* красная пунктирная рамка — яркий акцент */
-	padding: 20px;
+	border: 2px dotted black;
+	padding: 10px;
 	font-family: sans-serif;
-	line-height: 1.6;
+	color: #006400; /* зелёный текст по всему body — опционально */
 }
 
-h2 {
-	color: #fbe9d6; /* заголовки — тёплый крем */
-	border-bottom: 1px dashed #D4AF37; /* золотая пунктирная линия */
-	padding-bottom: 4px;
-	margin-top: 24px;
-}
-
-a {
-	color: #fbe9d6;
-	text-decoration: underline;
-}
-a:hover {
-	color: #D4AF37; /* золото при наведении */
-}
-
-blockquote.q {
-	color: #D4AF37; /* золотые цитаты — как надписи на подарках */
-	border-left: 4px solid #C1272D; /* красная полоса слева */
-	font-style: italic;
-	padding-left: 12px;
-	margin: 16px 0;
-}
-
+/* Цитата в стиле "Pudelinka" — фон золотой, текст зелёный, обводка красная */
 p.quote {
 	font-family: "Pudelinka", cursive;
-	font-size: 1.2em;
-	color: #fbe9d6; /* кремовый текст шрифтом Pudelinka */
-	margin: 12px 0;
-	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	background-color: #FFD700; /* золотой фон */
+	color: #006400; /* тёмно-зелёный текст */
+	text-shadow:
+		-1px -1px 0 #8B0000,
+		1px -1px 0 #8B0000,
+		-1px 1px 0 #8B0000,
+		1px 1px 0 #8B0000;
+	/* ИЛИ, для более чёткой обводки — 4 направления + центр: */
+	/* text-shadow: 
+		1px 0 0 #8B0000,
+		-1px 0 0 #8B0000,
+		0 1px 0 #8B0000,
+		0 -1px 0 #8B0000,
+		1px 1px 0 #8B0000,
+		-1px -1px 0 #8B0000,
+		1px -1px 0 #8B0000,
+		-1px 1px 0 #8B0000; */
+	padding: 8px 12px;
+	border-radius: 6px;
+	display: inline-block;
+	margin: 10px 0;
+}
+
+/* Также примените стили к blockquote.q — там у вас цитата Лао Цзы */
+blockquote.q {
+	color: #006400; /* зелёный текст */
+	background-color: #FFD700; /* золотой фон */
+	border-left: 4px solid #8B0000;
+	font-style: italic;
+	font-family: "Pudelinka", cursive;
+	padding: 8px 16px;
+	border-radius: 0 6px 6px 0;
+	margin: 16px 0;
+	text-shadow:
+		1px 0 0 #8B0000,
+		-1px 0 0 #8B0000,
+		0 1px 0 #8B0000,
+		0 -1px 0 #8B0000;
 }
