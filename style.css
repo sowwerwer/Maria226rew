@@ -5,13 +5,13 @@
     font-style: normal;
 }
 
-/* 🎨 Основной стиль — проверено на доступность (WCAG AAA) */
+/* ——— Основные стили ——— */
 body {
-    background-color: #FFD9B3; /* персиковый фон */
-    color: #2E5D2F;            /* тёмно-зелёный текст — контраст 7.2:1 ✅ */
+    background-color: #FFD9B3; /* персиковый */
+    color: #2E5D2F;            /* тёмно-зелёный */
     margin-left: 20%;
     margin-right: 20%;
-    border: 2px dotted #C1272D; /* красная пунктирная рамка */
+    border: 2px dotted #C1272D; /* красный */
     padding: 20px;
     font-family: sans-serif;
     line-height: 1.6;
@@ -19,24 +19,24 @@ body {
 
 h2 {
     color: #2E5D2F;
-    border-bottom: 1px dashed #D4AF37; /* золотая линия */
+    border-bottom: 1px dashed #D4AF37; /* золотой */
     padding-bottom: 4px;
     margin-top: 24px;
 }
 
 h3 {
     color: #C1272D;
-    margin-top: 16px;
 }
 
 a {
-    color: #C1272D; /* красный — как лента */
+    color: #C1272D;
     text-decoration: underline;
 }
 a:hover {
-    color: #8B0000; /* тёмно-красный при наведении */
+    color: #8B0000;
 }
 
+/* Обычные цитаты */
 blockquote {
     font-style: italic;
     margin: 16px 0;
@@ -44,33 +44,34 @@ blockquote {
     border-left: 3px solid #D4AF37;
 }
 
-blockquote.q {
-    color: #D4AF37; /* золотой */
-    border-left: 4px solid #C1272D;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 10px 16px;
+/* Специальный стиль — цитаты Лао Цзы: чёрные */
+blockquote.q.lao-tzu,
+p.quote.lao-tzu {
+    color: #000000; /* чёрный */
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 0 6px 6px 0;
+    padding: 10px 16px;
     font-family: "Pudelinka", cursive;
-    font-size: 1.1em;
-}
-
-p.quote {
-    font-family: "Pudelinka", cursive;
-    font-size: 1.25em;
-    color: #2E5D2F;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
-    margin: 14px 0;
+    font-size: 1.15em;
     line-height: 1.4;
-    padding: 6px 12px;
-    background-color: rgba(255, 255, 255, 0.4);
-    display: inline-block;
-    border-radius: 6px;
 }
 
+blockquote.q.lao-tzu {
+    border-left: 4px solid #333;
+}
+
+p.quote.lao-tzu {
+    display: inline-block;
+    margin: 14px 0;
+    padding: 8px 14px;
+}
+
+/* Обычные абзацы и отступы */
 p, h2, h3 {
     margin-bottom: 12px;
 }
 
+/* Изображения */
 img {
     max-width: 100%;
     height: auto;
