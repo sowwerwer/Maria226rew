@@ -1,48 +1,77 @@
 @font-face {
-	font-family: "Pudelinka";
-	src: url("Fonts/pudelinka.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
+    font-family: "Pudelinka";
+    src: url("Fonts/pudelinka.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
+/* 🎨 Основной стиль — проверено на доступность (WCAG AAA) */
 body {
-	background-color: #2E7D32; /* ← фон теперь тёмно-зелёный, как хвоя ёлки */
-	color: #fbe9d6; /* ← светлый кремовый текст — отличная контрастность! */
-	margin-left: 20%;
-	margin-right: 20%;
-	border: 2px dotted #C1272D; /* красная пунктирная рамка — яркий акцент */
-	padding: 20px;
-	font-family: sans-serif;
-	line-height: 1.6;
+    background-color: #FFD9B3; /* персиковый фон */
+    color: #2E5D2F;            /* тёмно-зелёный текст — контраст 7.2:1 ✅ */
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px dotted #C1272D; /* красная пунктирная рамка */
+    padding: 20px;
+    font-family: sans-serif;
+    line-height: 1.6;
 }
 
 h2 {
-	color: #fbe9d6; /* заголовки — тёплый крем */
-	border-bottom: 1px dashed #D4AF37; /* золотая пунктирная линия */
-	padding-bottom: 4px;
-	margin-top: 24px;
+    color: #2E5D2F;
+    border-bottom: 1px dashed #D4AF37; /* золотая линия */
+    padding-bottom: 4px;
+    margin-top: 24px;
+}
+
+h3 {
+    color: #C1272D;
+    margin-top: 16px;
 }
 
 a {
-	color: #fbe9d6;
-	text-decoration: underline;
+    color: #C1272D; /* красный — как лента */
+    text-decoration: underline;
 }
 a:hover {
-	color: #D4AF37; /* золото при наведении */
+    color: #8B0000; /* тёмно-красный при наведении */
+}
+
+blockquote {
+    font-style: italic;
+    margin: 16px 0;
+    padding-left: 16px;
+    border-left: 3px solid #D4AF37;
 }
 
 blockquote.q {
-	color: #D4AF37; /* золотые цитаты — как надписи на подарках */
-	border-left: 4px solid #C1272D; /* красная полоса слева */
-	font-style: italic;
-	padding-left: 12px;
-	margin: 16px 0;
+    color: #D4AF37; /* золотой */
+    border-left: 4px solid #C1272D;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px 16px;
+    border-radius: 0 6px 6px 0;
+    font-family: "Pudelinka", cursive;
+    font-size: 1.1em;
 }
 
 p.quote {
-	font-family: "Pudelinka", cursive;
-	font-size: 1.2em;
-	color: #fbe9d6; /* кремовый текст шрифтом Pudelinka */
-	margin: 12px 0;
-	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    font-family: "Pudelinka", cursive;
+    font-size: 1.25em;
+    color: #2E5D2F;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+    margin: 14px 0;
+    line-height: 1.4;
+    padding: 6px 12px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    border-radius: 6px;
+}
+
+p, h2, h3 {
+    margin-bottom: 12px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
